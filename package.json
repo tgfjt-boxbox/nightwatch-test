@@ -1,0 +1,17 @@
+{
+  "name": "nightwatch-test",
+  "version": "0.0.1",
+  "main": "test-start.js",
+  "scripts": {
+    "prepare": "sh get-selenium.sh",
+    "selenium": "java -jar selenium/selenium-server-standalone-2.41.0.jar",
+    "server": "./node_modules/node-static/bin/cli.js public",
+    "test": "node test-start.js"
+  },
+  "author": "tgfjt",
+  "license": "MIT",
+  "dependencies": {
+    "nightwatch": "^0.4.14",
+    "node-static": "^0.7.3"
+  }
+}
