@@ -24,7 +24,7 @@
       "ie_driver": "",
       "screenshots" : {
         "enabled" : true,
-        "path" : "screenshots"
+        "path" : "./screenshots"
       },
       "desiredCapabilities": {
         "browserName": "chrome",

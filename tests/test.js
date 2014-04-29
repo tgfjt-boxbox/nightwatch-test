@@ -5,7 +5,6 @@ module.exports = {
 			.url('http://localhost:8080/')
 			.waitForElementVisible('body', 1000)
 			.assert.title('Nightwatchのテスト')
-			.assert.visible('h2')
 			.assert.containsText('h1', 'Nightwatchのテストです!')
 			.assert.containsText('h2', '')
 	},
@@ -17,6 +16,7 @@ module.exports = {
 			.assert.containsText('h2', '影のタイトル')
 			.assert.visible('h2')
 			.assert.cssProperty('#js-panel', 'display', 'block')
+			.saveScreenshot('screenshots/ss.png')
 			.click('#js-button')
 			.pause(100)
 			.assert.cssProperty('#js-panel', 'display', 'none')

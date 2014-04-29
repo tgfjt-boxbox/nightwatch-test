@@ -7,3 +7,4 @@ reports/*.xml
 screenshots/*
 selenium/*
 !selenium/.gitkeep
+!screenshots/.gitkeep
